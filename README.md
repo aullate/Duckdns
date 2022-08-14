@@ -1,6 +1,6 @@
 ## DNS dinámico gratuito alojado en AWS
 <p align="center">
-  <img src="https://github.com/JuanRodenas/Cert_Letsencrypt/blob/main/duckdns-letsencrypt.png"
+  <img src="https://github.com/JuanRodenas/Duckdns/blob/main/files/duckDNS_log.jpg"
        width="700"/>
 </p>
 
@@ -8,9 +8,9 @@
 [DuckDNS](https://www.duckdns.org)
 - Copie el token de su dominio y el dominio creado.
 
-![alt text](https://github.com/JuanRodenas/Cert_Letsencrypt/blob/main/token-duckdns.png)
+![alt text](https://github.com/JuanRodenas/Duckdns/blob/main/files/token-duckdns.png)
 
-![alt text](https://github.com/JuanRodenas/Cert_Letsencrypt/blob/main/Dominio-duckdns.png)
+![alt text](https://github.com/JuanRodenas/Duckdns/blob/main/files/Dominio-duckdns.png)
 
 
 ### Creamos los archivos 
@@ -22,6 +22,9 @@ Y pegamos la siguiente línea:
 ```
 echo url="https://www.duckdns.org/update?domains=exampledomain&token=YOUR_TOKEN&ip=" | curl -k -o ~/duckdns/duck.log -K -
 ```
+Pueden ver un ejemplo del archivo en el repositorio o descargarlo de ejemplo:
+[duck.sh](https://github.com/JuanRodenas/Duckdns/blob/main/duck.sh)
+
 
 #### Editamos los parámetros de la línea con los datos creados anteriormente
 ```
@@ -51,6 +54,8 @@ ahora guarde el archivo (CTRL+O luego CTRL+X) y vamos a probar el script:
 ./duck.sh
 ```
 esto simplemente debería volver a un indicador con el porcentaje indicando si es correcto.
+![alt text](https://github.com/JuanRodenas/Duckdns/blob/main/duckDNS_ready.jpg)
+
 #### Podemos ver si el último intento fue exitoso indicará `OK` o por lo contrario indicará `KO`.
 ```
 cat duck.log
