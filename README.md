@@ -1,6 +1,6 @@
 ## DNS dinámico gratuito alojado en AWS
 <p align="center">
-  <img src="https://github.com/JuanRodenas/Duckdns/blob/main/files/duckDNS_log.jpg"
+  <img src="https://github.com/JuanRodenas/Duckdns/blob/main/files/duckdns_logo.png"
        width="700"/>
 </p>
 
@@ -54,13 +54,17 @@ ahora guarde el archivo (CTRL+O luego CTRL+X) y vamos a probar el script:
 ./duck.sh
 ```
 esto simplemente debería volver a un indicador con el porcentaje indicando si es correcto.
-![alt text](https://github.com/JuanRodenas/Duckdns/blob/main/duckDNS_ready.jpg)
+![alt text](https://github.com/JuanRodenas/Duckdns/blob/main/files/duckDNS_ejecuci%C3%B3n.jpg)
+
 
 #### Podemos ver si el último intento fue exitoso indicará `OK` o por lo contrario indicará `KO`.
 ```
 cat duck.log
 ```
 si es `KO`, verifique que su Token y Dominio sean correctos en el `duck.sh` script
+
+![alt text](https://github.com/JuanRodenas/Duckdns/blob/main/files/duckDNS_log.jpg)
+
 
 ### ¿ahora que?
 Ahora debemos de configurar el reenvío de puertos en su enrutador para hacer uso de su nuevo nombre DDNS.
