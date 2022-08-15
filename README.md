@@ -23,7 +23,7 @@ Y pegamos la siguiente línea:
 echo url="https://www.duckdns.org/update?domains=exampledomain&token=YOUR_TOKEN&ip=" | curl -k -o ~/duckdns/duck.log -K -
 ```
 <sup>Pueden ver un ejemplo del archivo en el repositorio o descargarlo de ejemplo:</sup>
-<a title="duck.sh" href="https://github.com/JuanRodenas/Duckdns/blob/main/duck.sh"><img src="https://github.com/JuanRodenas/Duckdns/blob/main/files/down.png" alt="duck.sh" width="120" align="center" /></a>
+<a title="duck.sh" href="https://github.com/JuanRodenas/Duckdns/blob/main/duck.sh"><img src="https://github.com/JuanRodenas/Duckdns/blob/main/files/down.png" alt="duck.sh" width="100" align="center" /></a>
 
 
 #### Editamos los parámetros de la línea con los datos creados anteriormente
