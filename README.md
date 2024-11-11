@@ -43,7 +43,7 @@ chmod 700 duck.sh && chmod a+x duck.sh
 #### Damos permisos de ejecución al archivo:
 a continuación, usaremos el proceso con `cron` para hacer que el script se ejecute `cada 5 minutos`:
 ```
-crontab-e
+crontab -e
 ```
 copia este texto y pégalo en la parte inferior del `crontab`:
 ```
